@@ -1,21 +1,23 @@
-import random
+from random import randint
+
+def randInp(number):
+    range_start = 10 **( number - 1)
+    range_end = (10 ** number) - 1
+    if randint(range_start, range_end) == 13:
+        return 'It is a gp-skitto number'
+    if randint(range_start, range_end) == 15:
+        return 'It is a Teletalk number'
+    if randint(range_start, range_end) == 16:
+        return 'It is a Airtel number'
+    if randint(range_start, range_end) == 17:
+        return 'It is a GP number'
+    if randint(range_start, range_end) == 18:
+        return 'It is a Robi number'
+    if randint(range_start, range_end) == 19:
+        return 'It is a BL number'
+    else:
+        return 'It is a normal number'
 
 
-def getAnswer(answerNumber):
-    if answerNumber == 1:
-        return 'It is one'
-    elif answerNumber == 2:
-        return 'It is two'
-    elif answerNumber == 3:
-        return 'It is four'
-    if answerNumber == 4:
-        return 'It is one'
-    elif answerNumber == 5:
-        return 'It is five'
-    elif answerNumber == 6:
-        return 'It is six'
-
-
-r = random.randint(1, 6)
-fortune = getAnswer(r)
-print(fortune)
+x = randInp(2)
+print( x)
