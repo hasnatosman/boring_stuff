@@ -1,0 +1,6 @@
+print('Input a name in the list: ')
+catName1 = input()
+catName2 = input()
+catName3 = input()
+catName4 = input()
+print(catName1 + ' ' + catName2 + ' ' + catName3 + ' ' + catName4)
